@@ -54,15 +54,16 @@ in
     ./assets
 
     ./modules/cli
-    ./modules/theme
 
-    ./modules/system/services
+    ./modules/services
+
+    ./modules/theme.nix
   ]
   ++ lib.optionals (hasRole "desktop") [
     ./modules/gui
 
-    ./modules/system/session
-    ./modules/system/xdg-jail.nix
+    ./modules/session
+    ./modules/xdg-jail.nix
   ];
 
   xdg.enable = true;
