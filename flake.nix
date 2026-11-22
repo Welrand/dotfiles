@@ -28,7 +28,7 @@
       hostsRaw = [
         {
           hostname = "homelab";
-          deviceId = "Y33IVUJ-5HMEGX6-CLW3PAQ-PXKI2RF-TUM3Y7C-VAQTDE7-V43LW4V-RV7TIAD";
+          deviceId = "HKJ5FDG-ED4PFJK-BFBBKX3-ZKYLK6T-TKCCT7A-ABAICMI-M7Z4M2V-MHYSVAA";
           gpuVendor = "intel";
           roles = [
             "server"
@@ -43,7 +43,7 @@
         }
         {
           hostname = "cyberia";
-          deviceId = "LZAWUPK-DVPWCJ5-7INP5UI-ULGJYSM-25VYXL6-CCHYYXG-A5YFA4O-PORVFAO";
+          deviceId = "AJG3YMP-77AUUWB-GH5PAPP-NFISPYN-LT6656K-M5GKLU2-4NYN2DT-BSY4WAX";
           gpuVendor = "amd";
           roles = [
             "desktop"
@@ -61,7 +61,7 @@
         }
         {
           hostname = "x14p";
-          deviceId = "VZHX56X-H3U2APW-3E7QETV-3NR6QCV-7JTOVFF-FAY3E5B-DNY3HHH-RATQEAW";
+          deviceId = "P5TI3YN-H3LK7FN-EDFAQQ3-47ZNW3F-P5Q7UEE-F3HEDZR-6DMPGXZ-JVFAMQL";
           gpuVendor = "amd";
           roles = [
             "laptop"

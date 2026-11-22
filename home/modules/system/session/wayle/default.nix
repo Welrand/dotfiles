@@ -202,33 +202,29 @@ in
           };
         };
 
-        media = {
-          left-click = "${pkgs.playerctl}/bin/playerctl play-pause";
-          right-click = "dropdown:media";
-          middle-click = "${pkgs.playerctl}/bin/playerctl stop";
-        };
-
         brightness = {
           scroll-up = "${config.xdg.dataHome}/bin/brightness --inc";
           scroll-down = "${config.xdg.dataHome}/bin/brightness --dec";
         };
 
         volume = {
+          right-click = "wayle audio output-mute";
+          middle-click = "pavucontrol";
           scroll-up = "${config.xdg.dataHome}/bin/volume --inc";
           scroll-down = "${config.xdg.dataHome}/bin/volume --dec";
         };
 
         bluetooth = {
           label-show = false;
-          right-click = "blueman-manager";
+          middle-click = "blueman-manager";
         };
 
         network = {
           label-show = false;
-          right-click = "nm-connection-editor";
+          middle-click = "nm-connection-editor";
         };
 
-        notification = {
+        notifications = {
           popup-monitor = monitors.primary;
           popup-duration = 8000;
           popup-position = "bottom-right";

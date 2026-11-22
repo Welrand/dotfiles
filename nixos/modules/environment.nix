@@ -39,19 +39,19 @@
       zellij
       lsof
       jq
-      bc
       tree
       zoxide
       fzf
       fd
       ripgrep
-      shfmt
       tldr
       lsd
       man-db
       gdu
       trash-cli
       rustnet
+
+      shfmt
 
       bun
       biome
@@ -74,12 +74,10 @@
       pulsemixer
       pamixer
 
-      nvd
-      nix-output-monitor
-      home-manager
+      nh
       nixd
       nixfmt
-      nh
+      home-manager
 
       openssl
       postgresql
@@ -93,22 +91,19 @@
       unzip
       psmisc
       bubblewrap
+      appimage-run
       socat
       wakeonlan
       usbutils
       plocate
       brightnessctl
-      aml
       bind
       bluez
       bluetui
       bridge-utils
-      cloc
-      cpio
       dmidecode
       docker
       docker-compose
-      espeak-ng
       evtest
       fastfetch
       fuse-overlayfs
@@ -117,23 +112,12 @@
       gvfs
       inotify-tools
       iptables
-      less
-      libgphoto2
-      libgsf
-      libguestfs
-      libva
-      libva-utils
-      libinput
       ffmpeg-full
-      nmap
-      proxychains
       rclone
       rsync
       sdbus-cpp
-      sox
       traceroute
       wget
-      zram-generator
       curl
     ]
     ++ lib.optionals (hasRole "desktop") (
@@ -151,6 +135,7 @@
         hyprpolkitagent
 
         vivaldi
+        vivaldi-ffmpeg-codecs
         ungoogled-chromium
 
         copyq
@@ -165,6 +150,7 @@
         obs-studio
         telegram-desktop
 
+        vorta
         nemo-with-extensions
         nemo-fileroller
         file-roller
@@ -183,23 +169,17 @@
         virt-manager
         qemu_full
 
-        libnotify
+        wev
         droidcam
-        electron
+        libnotify
         ffmpegthumbnailer
         gnome-themes-extra
-
-        mpc
-        freerdp
-        tk
-        wev
+        gtk-engine-murrine
 
         eog
         kooha
         satty
         grimblast
-
-        gtk-engine-murrine
       ]
     );
 

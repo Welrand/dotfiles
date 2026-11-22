@@ -6,8 +6,8 @@ hl.bind("SUPER + ALT + F1",
     )
 )
 
-hl.bind("SUPER + SHIFT + F11", hl.dsp.exec_cmd("hyprctl reload config-only"))
-hl.bind("SUPER + SHIFT + F12", hl.dsp.exec_cmd("systemctl --user restart wayle"))
+hl.bind("SUPER + SHIFT + F9", hl.dsp.exec_cmd("hyprctl reload config-only"))
+hl.bind("SUPER + SHIFT + F10", hl.dsp.exec_cmd("systemctl --user restart wayle"))
 
 hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd("uwsm app -- run-powermenu"))
 
@@ -18,6 +18,8 @@ hl.bind("SUPER + L", hl.dsp.exec_cmd(nix.binPath .. "/switch-layout 0 && loginct
 ------------------------ utilities ------------------------
 
 hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("uwsm app -- kitty --single-instance"))
+
+hl.bind("SUPER + G", hl.dsp.exec_cmd("uwsm app -- run-sink-selector"))
 
 hl.bind("SUPER + V", hl.dsp.exec_cmd("uwsm app -- copyq show"))
 
@@ -52,15 +54,6 @@ hl.bind("SUPER + TAB", hl.dsp.exec_cmd("run-on-workspace 'special:aichat' 'uwsm 
 
 
 
------------------------- audio & bluetooth ------------------------
-
-hl.bind("SUPER + G", hl.dsp.exec_cmd("uwsm app -- run-sink-selector"))
-
-hl.bind("SUPER + SHIFT + G", hl.dsp.exec_cmd("uwsm app -- pavucontrol"))
-
-hl.bind("SUPER + ALT + G", hl.dsp.exec_cmd("uwsm app -- blueman-manager"))
-
-
 
 ------------------------ screenshot ------------------------
 
@@ -68,6 +61,7 @@ hl.bind("Print", hl.dsp.exec_cmd(nix.binPath .. "/screenshot --screen"))
 hl.bind("SUPER + ALT + S", hl.dsp.exec_cmd(nix.binPath .. "/screenshot --win"))
 hl.bind("SUPER + CTRL + S", hl.dsp.exec_cmd(nix.binPath .. "/screenshot --screen"))
 hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd(nix.binPath .. "/screenshot --area"))
+
 hl.bind("SUPER + SHIFT + R", hl.dsp.exec_cmd(nix.binPath .. "/screenshot --ocr-area"))
 
 
@@ -106,7 +100,8 @@ hl.bind("SUPER + 5", hl.dsp.focus({ workspace = 5 }))
 hl.bind("SUPER + 6", hl.dsp.focus({ workspace = 6 }))
 hl.bind("SUPER + 7", hl.dsp.focus({ workspace = 7 }))
 hl.bind("SUPER + 8", hl.dsp.focus({ workspace = 8 }))
-
+hl.bind("SUPER + 9", hl.dsp.focus({ workspace = 9 }))
+hl.bind("SUPER + 0", hl.dsp.focus({ workspace = 10 }))
 hl.bind("SUPER + F1", hl.dsp.focus({ workspace = 9 }))
 hl.bind("SUPER + F2", hl.dsp.focus({ workspace = 10 }))
 
@@ -163,6 +158,8 @@ hl.bind("SUPER + SHIFT + 5", hl.dsp.window.move({ workspace = 5 }))
 hl.bind("SUPER + SHIFT + 6", hl.dsp.window.move({ workspace = 6 }))
 hl.bind("SUPER + SHIFT + 7", hl.dsp.window.move({ workspace = 7 }))
 hl.bind("SUPER + SHIFT + 8", hl.dsp.window.move({ workspace = 8 }))
+hl.bind("SUPER + SHIFT + 9", hl.dsp.window.move({ workspace = 9 }))
+hl.bind("SUPER + SHIFT + 0", hl.dsp.window.move({ workspace = 10 }))
 hl.bind("SUPER + SHIFT + F1", hl.dsp.window.move({ workspace = 9 }))
 hl.bind("SUPER + SHIFT + F2", hl.dsp.window.move({ workspace = 10 }))
 

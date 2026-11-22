@@ -141,6 +141,8 @@ in
 
     (enjail unstable.prismlauncher)
 
+    (enjail unstable.postman)
+
     (enjail unstable.anydesk)
     (enjail unstable.spotify)
 
@@ -161,9 +163,5 @@ in
     # ---------- Special pkgs ---------- #
 
     (enjail-raw unstable.onlyoffice-desktopeditors { extraArgs = [ "--force-scale=1" ]; })
-
-    (enjail-raw unstable.postman {
-      preRun = "export GSETTINGS_SCHEMA_DIR='${pkgs.gtk3}/share/gsettings-schemas/gtk+3-${pkgs.gtk3.version}/glib-2.0/schemas'";
-    })
   ];
 }

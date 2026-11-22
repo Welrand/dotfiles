@@ -10,6 +10,7 @@ hl.on("hyprland.start",
         hl.exec_cmd("uwsm app -- udiskie --automount --notify --smart-tray")
         hl.exec_cmd("uwsm app -- tailscale systray --theme dark:nobg")
         hl.exec_cmd("uwsm app -- copyq --start-server")
+        hl.exec_cmd("uwsm app -- vorta --daemonize")
 
 
         hl.exec_cmd("run-on-workspace 'special:hidden' 'uwsm app -- nemo ~/.local/share/nemo' --silent")

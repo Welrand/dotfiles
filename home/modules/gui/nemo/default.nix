@@ -14,6 +14,9 @@
     sftp://cyberia${config.home.homeDirectory} sftp://cyberia
     sftp://homelab${config.home.homeDirectory} sftp://homelab
     sftp://x14p${config.home.homeDirectory} sftp://x14p
+
+    sftp://nord/data/data/com.termux/files/home sftp://nord
+    sftp://tablet/data/data/com.termux/files/home sftp://tablet
   '';
 
   dconf.settings = {

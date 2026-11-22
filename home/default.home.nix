@@ -39,6 +39,8 @@ let
 
     TERMINFO = "${config.xdg.dataHome}/terminfo";
     TERMINFO_DIRS = "${config.xdg.dataHome}/terminfo:/usr/share/terminfo";
+
+    GSETTINGS_SCHEMA_DIR = "${pkgs.gtk3}/share/gsettings-schemas/gtk+3-${pkgs.gtk3.version}/glib-2.0/schemas";
   };
 in
 {

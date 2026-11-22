@@ -33,6 +33,8 @@
 
       clear_all_shortcuts yes
 
+      mouse_map alt+left click ungrabbed mouse_handle_click link
+
       map page_up scroll_page_up
       map page_down scroll_page_down
       map ctrl_page_up scroll_home

@@ -16,8 +16,8 @@
 
   hardware.cpu.intel.updateMicrocode = true;
 
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
+  hardware.bluetooth.enable = false;
+  hardware.bluetooth.powerOnBoot = false;
   hardware.bluetooth.disabledPlugins = [ "PowerManager" ];
 
   hardware.firmware = [ pkgs.linux-firmware ];

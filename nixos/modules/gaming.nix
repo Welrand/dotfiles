@@ -10,6 +10,8 @@
 
       lutris
       bottles
+
+      ryubing
     ]
     ++ lib.optionals (hasRole "gameclient") [
       moonlight-qt

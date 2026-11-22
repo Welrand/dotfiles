@@ -10,6 +10,13 @@ in
   _module.args.monitors = monitors;
 
   wayland.windowManager.hyprland.settings = {
+    device = [
+      {
+        name = "e-signal-usb-gaming-mouse";
+        sensitivity = -0.25;
+      }
+    ];
+
     monitor = [
       {
         _args = [

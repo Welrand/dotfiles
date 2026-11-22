@@ -18,8 +18,6 @@
       home-manager.useUserPackages = true;
     }
 
-    ./modules/selinux
-
     ./modules/audio.nix
     ./modules/networking.nix
     ./modules/environment.nix
@@ -83,9 +81,9 @@
   virtualisation.oci-containers.backend = "docker";
 
   security.polkit.enable = true;
-  security.pam.services.su.enableGnomeKeyring = hasRole "desktop";
-  security.pam.services.sudo.enableGnomeKeyring = hasRole "desktop";
-  security.pam.services.login.enableGnomeKeyring = hasRole "desktop";
+  security.pam.services.su.enableGnomeKeyring = lib.mkForce false;
+  security.pam.services.sudo.enableGnomeKeyring = lib.mkForce false;
+  security.pam.services.login.enableGnomeKeyring = lib.mkForce false;
   security.pam.services.hyprlock.enableGnomeKeyring = hasRole "desktop";
 
   services.getty = lib.mkIf (hasRole "desktop") {
